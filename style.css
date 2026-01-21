@@ -1,77 +1,90 @@
-/* Center everything and set a nice font */
+/* Eastgate Mall Navigator - Professional Theme */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    /* This creates the blue gradient background from their site */
+    background: linear-gradient(135deg, #00adef 0%, #0072bc 100%);
     margin: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    color: #333;
+    min-height: 100vh;
 }
 
-/* Make the header look sleek */
-header {
-    background-color: #004a99; /* Your Eastgate Blue */
-    color: white;
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 30px;
-}
-
-/* Create a "Card" for the input fields */
 main {
     background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     width: 90%;
-    max-width: 400px;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 25px; /* Modern rounded corners */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    text-align: center;
 }
 
-/* Style the labels and dropdowns */
+header h1 {
+    color: #0072bc;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Style the labels for a cleaner look */
 label {
     display: block;
+    text-align: left;
     font-weight: bold;
-    margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 13px;
+    color: #555;
+    margin: 15px 0 5px 5px;
 }
 
+/* Modernizing the dropdowns */
 select {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fafafa;
+    padding: 14px;
+    border-radius: 12px;
+    border: 2px solid #eee;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
 }
 
-/* Make the blue button pop */
+select:focus {
+    border-color: #00adef;
+}
+
+/* The 'Pill' Button look from the Eastgate site */
 button {
     width: 100%;
-    background-color: #004a99;
+    margin-top: 25px;
+    background-color: #00adef;
     color: white;
     border: none;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 16px;
+    border-radius: 50px; /* Fully rounded 'pill' shape */
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s;
+    box-shadow: 0 4px 10px rgba(0,173,239,0.3);
+    transition: transform 0.2s, background 0.2s;
 }
 
 button:hover {
-    background-color: #003366; /* Darker blue on hover */
+    background-color: #0072bc;
+    transform: translateY(-2px);
 }
 
-/* Style the directions output */
+/* The directions output box */
 #output {
     margin-top: 25px;
-    padding: 15px;
-    background-color: #e7f3ff;
-    border-left: 5px solid #004a99;
-    border-radius: 4px;
+    padding: 20px;
+    background-color: #f0faff;
+    border-radius: 15px;
+    color: #005a96;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
+    border: 1px solid #cceeff;
+    min-height: 50px;
 }
