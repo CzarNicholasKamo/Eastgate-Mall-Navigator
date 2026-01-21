@@ -7,10 +7,11 @@ function getDirections() {
     "La Parada": "On the Rooftop Piazza near Entrance 9.",
     "Checkers LiquorShop": "Lower Level, Entrance 3.",
     "Cosmic Comics": "Entrance 2, Lower Level.",
-    "Nespresso": "Upper Level, Entrance 8."
+    "Nespresso": "Upper Level, Entrance 8.",
     "Adidas": "Second level,  Entrance 1.",
   };
 
   const message = `From ${entrance}, head towards ${store}. ${directions[store]}`;
   document.getElementById("output").innerText = message;
+
 }
