@@ -21,12 +21,25 @@ main {
 }
 
 header h1 {
+    font-family: 'Arial Black', 'Arial Bold', sans-serif; /* Thickest available fonts */
     color: #0072bc;
-    font-size: 24px;
-    margin-bottom: 25px;
-    font-weight: 800;
+    font-size: 28px;
+    font-weight: 900;
+    font-style: italic; /* The signature Eastgate slant */
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: -1.5px; /* Pulls the letters closer like the logo */
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between the icon and text */
+}
+
+/* Optional: If you want to add a small blue dot or icon before the text */
+header h1::before {
+    content: "📍"; /* You can replace this with a compass or map pin emoji */
+    font-style: normal;
+    font-size: 24px;
 }
 
 /* Style the labels for a cleaner look */
@@ -88,3 +101,4 @@ button:hover {
     border: 1px solid #cceeff;
     min-height: 50px;
 }
+
