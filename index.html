@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eastgate Mall Navigator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🧭 Eastgate Mall Navigator</h1>
+  </header>
+
+  <main>
+    <label for="entrance">Choose Entrance:</label>
+    <select id="entrance">
+      <option value="Entrance 1">Entrance 1</option>
+      <option value="Entrance 2">Entrance 2</option>
+      <option value="Entrance 6">Entrance 6</option>
+      <option value="Rooftop Piazza">Rooftop Piazza</option>
+    </select>
+
+    <label for="store">Select Store:</label>
+    <select id="store">
+      <option value="JD Sports">JD Sports</option>
+      <option value="La Parada">La Parada</option>
+      <option value="Checkers LiquorShop">Checkers LiquorShop</option>
+      <option value="Cosmic Comics">Cosmic Comics</option>
+      <option value="Nespresso">Nespresso</option>
+      <option vlaue="Adidas">Adidas</option>
+    </select>
+
+    <button onclick="getDirections()">Get Directions</button>
+
+    <div id="output"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
