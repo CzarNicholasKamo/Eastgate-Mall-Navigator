@@ -10,12 +10,16 @@ function getDirections() {
     "Nespresso": "Upper Level, Entrance 8.",
     "Adidas": "Second level,  Entrance 1.",
   };
-
-  const message = `From ${entrance}, head towards ${store}. ${directions[store]}`;
-    
+const message = `From ${entrance}, head towards ${store}. ${directions[store]}`;
     const outputBox = document.getElementById("output");
+
+    outputBox.classList.remove("show-output");
+    void outputBox.offsetWidth; 
+    
     outputBox.innerText = message;
     outputBox.classList.add("show-output");
 }
+
+
 
 
