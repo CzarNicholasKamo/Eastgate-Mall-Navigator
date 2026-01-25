@@ -12,8 +12,10 @@ function getDirections() {
   };
 
   const message = `From ${entrance}, head towards ${store}. ${directions[store]}`;
-  document.getElementById("output").innerText = message;
-  outputBox.classList.add("show-output");
-
+    
+    const outputBox = document.getElementById("output");
+    outputBox.innerText = message;
+    outputBox.classList.add("show-output");
 }
+
 
